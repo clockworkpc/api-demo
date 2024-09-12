@@ -10,7 +10,7 @@ For each API the process is fairly simple:
 1. Write a wrapper in `app/services/`
 2. Write a spec in `spec/services`
 
-Sensitive credentials are generally saved to Rails' in-built encrypted credentials file.
+Sensitive credentials are saved to Rails' in-built encrypted credentials file or sometimes to environmental variables.
 
 The Rails app is not meant to be deployed to production, but rather to be run in Docker, using Docker Compose for the whole setup:
 - Rails App ('web')
